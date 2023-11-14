@@ -1,7 +1,7 @@
 // TODO: Create an array of questions for user input
 const inquirer = require('inquirer');
 const fs = require('fs');
-const {Circle, Triangle, Square} = require('./lib/shapes.js');
+const {Shape, Circle, Triangle, Square} = require('./lib/shapes.js');
 console.log('Answer all the questions to create a logo!');
 
 const questions = [
