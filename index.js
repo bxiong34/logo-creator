@@ -29,19 +29,7 @@ const questions = [
     }, 
   ];
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, (err) => {
-        if (input = "") {
-            return console.log('Please answer all questions to create a logo.');
-        } else {
-        console.log('Generated logo.svg');
-        }
-    })
-};
-  
-
-function writeToFile() {
+function writeFile() {
     fs.writeFile((err) => {
         if (input = "") {
             return console.log('Please make sure you complete all sections.');
@@ -55,9 +43,9 @@ function init() {
     inquirer.prompt(questions)
    .then((input) => {
         console.log(input);
-const SVG = `<${this.shape}svg width="300" height="200" fill="${this.color}" viewBox="-70.5 -70.5 391 391" xmlns="http://www.w3.org/2000/svg><text x="150" y="125" font-size="60" text-anchor="middle" fill="${this.textcolor}">${this.text}</text>`;
+    const SVG = `<${this.shape}svg width="300" height="200" fill="${this.color}" viewBox="-70.5 -70.5 391 391" xmlns="http://www.w3.org/2000/svg><text x="150" y="125" font-size="60" text-anchor="middle" fill="${this.textcolor}">${this.text}</text>`;
 
-    fs.writeToFile('./examples/logo.svg', SVG);
+    fs.writeFile('./examples/logo.svg', SVG);
     
     if (input = "") {
         return console.log('Please answer all questions to create a logo.');
