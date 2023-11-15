@@ -47,4 +47,7 @@ When a user answer all the prompts, a logo will be generated based on the user's
 https://drive.google.com/file/d/1pkywj9NzFI6bTpHEsLS-cqT1sVpq-yyN/view?usp=sharing
 --- -->
 
+## Tests
+Type "npm test" in the command line to run a test that renders an expected outcome of each shape class (Circle, Triangle, Square).
+
 © 2023 Bao Xiong. All Rights Reserved.

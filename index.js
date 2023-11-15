@@ -1,7 +1,10 @@
 // TODO: Create an array of questions for user input
 const inquirer = require('inquirer');
 const fs = require('fs');
-const {Shape, Circle, Triangle, Square} = require('./lib/shapes.js');
+const setShape = require('./lib/setShape.js');
+const fileName = './examples/logo.svg';
+
+
 console.log('Answer all the questions to create a logo!');
 
 //prompt to create logo
@@ -30,26 +33,22 @@ const questions = [
     }, 
   ];
 
-//function to render shape
-
-
-//function to write svg file
-function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, (err) => {
-        if (input = "") {
-            return console.log(err);
-        } else {
+//function to create logo
+function createLogo(input) {
+    const svg = setShape(input);
+    fs.writeFile(fileName, svg, () => {
         console.log('Generated logo.svg');
-        }
     })
 }
-  
+
 //function to initialize app
 function init() {
     inquirer.prompt(questions)
-   .then(function (data) {
-    var fileName = './generated-readme/README.md';
-    writeToFile(fileName, data);
+   .then((input) => {
+        createLogo (input);
+   })
+   .catch(err =>{
+        console.log(err);
    });
 }
 
