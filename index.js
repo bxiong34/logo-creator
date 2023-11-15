@@ -36,7 +36,7 @@ const questions = [
 //function to create logo
 function createLogo(input) {
     const svg = setShape(input);
-    fs.writeFile(fileName, svg, () => {
+    fs.writeFile(fileName, svg, "UTF-8", () => {
         console.log('Generated logo.svg');
     })
 }
