@@ -33,19 +33,17 @@ THEN I am shown a 300x200 pixel image that matches the criteria I entered
 
 ## Mock-Up
 
-<!-- The following image shows a mock-up of the generated SVG given the following input entered by the user: `SVG` for the text, `white` for the text color, `circle` from the list of shapes, and `green` for the shape color. Note that this is just an image of the output SVG and not the SVG file itself:
+The following images shows a mock-up of the generated SVG based on a user's inputs:
 
-![Image showing a green circle with white text that reads "SVG.".](./Images/10-oop-homework-demo.png) -->
+![Alt text](<examples/Screenshot 2023-11-14 at 11.20.31 PM.png>)
+![Alt text](<examples/Screenshot 2023-11-14 at 11.20.57 PM.png>)
 
 ## Usage
 
 When a user answer all the prompts, a logo will be generated based on the user's inputs.
 
-<!-- ![Alt text](<assets/Screenshot 2023-11-08 at 6.28.48 PM.png>)
-
-<video src="assets/Challenge9.mp4" controls title="Title"></video>
-https://drive.google.com/file/d/1pkywj9NzFI6bTpHEsLS-cqT1sVpq-yyN/view?usp=sharing
---- -->
+<video src="examples/Challenge10.mp4" controls title="Title"></video>
+https://drive.google.com/file/d/1CSUQmv6fltZ-pa6A8J8wWyaYrjCP-_Qz/view?usp=sharing
 
 ## Tests
 Type "npm test" in the command line to run a test that renders an expected outcome of each shape class (Circle, Triangle, Square).
